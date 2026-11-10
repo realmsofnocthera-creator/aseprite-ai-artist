@@ -14,3 +14,11 @@
 Poses and timings follow `rules/42-walk-and-run.md` (flight on frames 4 and 8, 640–720 ms loop).
 The `.aseprite` was written by `build.py` directly, not through the plugin, because no Aseprite
 binary was available when it was made; it parses cleanly but has not been opened in Aseprite.
+
+## 128×128 version
+
+`build128.py` re-renders the same skeleton and poses at 2× (outlines and shading bands become
+half as thick relative to the body). Outputs: `warrior-run-128-sheet.png` (1024×128),
+`warrior-run-128.aseprite`, `warrior-run-128.gif`, `warrior-run-128.mp4`.
+`python3 build128.py <background.png>` also renders `warrior-run-128-forja.mp4`, the warrior running
+across a forge scene with warm lighting (the background image is not stored in this repo).
